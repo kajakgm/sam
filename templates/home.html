@@ -1,5 +1,6 @@
 {% for i in pro %}
     {{ i.sno }} <br>
+<img src="{{ i.img.url }}" width=200>
 {% if i.files %}
 <a href="{{ i.files.url }} " download>Downlaod<br>
     <hr>
