@@ -1,0 +1,16 @@
+<html>
+
+<body>
+
+<form method="POST">
+{% csrf_token %}
+<input type="email" name="email" placeholder="enter name"  required><br><br>
+
+<input type="password" name="password" placeholder="enter password" required><br><br>
+<button type="submit" name="action" value="save">save</button>
+<button type="submit" name="action" value="forget">forget</button>
+</form>
+</body>
+
+
+</html>

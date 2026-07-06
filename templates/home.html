@@ -1,0 +1,9 @@
+{% for i in pro %}
+    {{ i.sno }} <br>
+{% if i.files %}
+<a href="{{ i.files.url }} " download>Downlaod<br>
+    <hr>
+{% else %}
+error
+{% endif %}
+{% endfor %}
